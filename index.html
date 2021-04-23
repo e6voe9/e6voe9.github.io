@@ -1,175 +1,554 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="img/icons/favicon.svg">
+    <title>InfoBot | Start</title>
+    <!-- styles -->
     <link rel="stylesheet" href="css/style.css">
-    <title>Георгий Баханович | Front-end Web Dev</title>
-    <link rel="shorticon icon" href="img/favicon.svg">
-    <style>
-        @font-face{font-family:Nunito; src:url(fonts/nunito-extralight-webfont.woff2) format('truetype'); font-weight:200; font-style:normal; font-display:swap}@font-face{font-family:Nunito; src:url(fonts/nunito-light-webfont.woff2) format('truetype'); font-weight:300; font-style:normal; font-display:swap}@font-face{font-family:Nunito; src:url(fonts/nunito-regular-webfont.woff2) format('truetype'); font-weight:400; font-style:normal; font-display:swap}@font-face{font-family:Nunito; src:url(fonts/nunito-semibold-webfont.woff2) format('truetype'); font-weight:600; font-style:normal; font-display:swap}@font-face{font-family:Nunito; src:url(fonts/nunito-bold-webfont.woff2) format('truetype'); font-weight:700; font-style:normal; font-display:swap}@font-face{font-family:Nunito; src:url(fonts/nunito-black-webfont.woff2) format('truetype'); font-weight:900; font-style:normal; font-display:swap}
-    </style>
+    <!-- styles -->
 </head>
 
 <body>
-    <div class="container">
-        <div class="background">
-            <div class="background_preloader">
-                <div class="background_preloader-1">
-                    <span style="--i:1;" class="hello_word">.</span>
-                    <span style="--i:2;" class="hello_word">.</span>
-                    <span style="--i:3;" class="hello_word">.</span>
-                    <span style="--i:4;" class="hello_word">.</span>
-                    <span style="--i:5;" class="hello_word">.</span>
-                    <span style="--i:6;" class="hello_word">.</span>
+    <!-- header -->
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="logo header__logo">
+                    <a href="#root" class="logo__link">
+                        <img width="149" height="37" src="img/icons/logo.svg" alt="logo" class="logo__img">
+                    </a>
                 </div>
-                <div class="background_preloader-2">
-                    <span style="--i:1;" class="hello_word-w">e</span>
-                    <span style="--i:2;" class="hello_word-w">6</span>
-                    <span style="--i:3;" class="hello_word-w">v</span>
-                    <span style="--i:4;" class="hello_word-w">0</span>
-                    <span style="--i:5;" class="hello_word-w">e</span>
-                    <span style="--i:6;" class="hello_word-w">9</span>
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a href="#help" class="menu__link menu-button-open">Infobot help you</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#how" class="menu__link menu-button-open">How it work?</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#what-do" class="menu__link menu-button-open">What it do?</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#testimonials" class="menu__link menu-button-open">Testimonials</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#faq" class="menu__link menu-button-open">FAQ</a>
+                        </li>
+                        <li class="menu__item phone menu-button-open">
+                            <a href="tel:+74992868711"><b>+7 499 286 87 11</b></a><button class="menu__link callback-open-btn">Callback</button>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__btns">
+                    <div class="language">
+                        <button class="language__item language__item--active">Eng</button>
+                        <div class="language__separator"></div>
+                        <button class="language__item">Heb</button>
+                    </div>
+                    <div class="burger menu-button-open">
+                        <div class="burger__item"></div>
+                        <div class="burger__item"></div>
+                        <div class="burger__item"></div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="content">
-            <header>
-                <span id="navbar-logo" class="logo">e6voe9</span>
-                <ul class="navbar">
-                    <li id="navbar-about" class="navbar_item navbar_item-1">обо мне</li>
-                    <li id="navbar-portfolio" class="navbar_item">портфолио</li>
-                </ul>
-                
-            </header>
-            <main>
-                <div class="first">
-                    e6voe9
+    </header>
+    <!-- header -->
+    <main id="root">
+        <section class="main-screen">
+            <div class="container">
+                <div class="main-screen__inner">
+                    <h1 class="main-screen__title">The phone robot is capable of supporting complex dialogs</h1>
+                    <p class="main-screen__sub-title">It nearly does not differ from a human, it can also make 100,000 calls per minute, and will raise your business up to a new level of efficiency.</p>
+                    <ul class="marked-list main-screen__marked-list marked-list--arrow">
+                        <li class="marked-list__item">Almost does not differ from a person</li>
+                        <li class="marked-list__item">Makes 200 calls per minute</li>
+                    </ul>
+                    <button class="button callback-open-btn">Talk to the robot</button>
                 </div>
-                <div class="about">
-                    обо мне <br>
-                    Разнообразный и богатый опыт дальнейшее развитие различных форм деятельности требуют от нас анализа дальнейших направлений развития. Идейные соображения высшего порядка, а также постоянный количественный рост и сфера нашей активности играет важную роль в формировании существенных финансовых и административных условий.
-
-Таким образом постоянный количественный рост и сфера нашей активности требуют от нас анализа соответствующий условий активизации. Задача организации, в особенности же реализация намеченных плановых заданий требуют от нас анализа соответствующий условий активизации. Идейные соображения высшего порядка, а также новая модель организационной деятельности влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям.
-
-Разнообразный и богатый опыт дальнейшее развитие различных форм деятельности в значительной степени обуславливает создание позиций, занимаемых участниками в отношении поставленных задач. Значимость этих проблем настолько очевидна, что начало повседневной работы по формированию позиции представляет собой интересный эксперимент проверки соответствующий условий активизации. Повседневная практика показывает, что постоянный количественный рост и сфера нашей активности влечет за собой процесс внедрения и модернизации дальнейших направлений развития.
-
-С другой стороны реализация намеченных плановых заданий позволяет оценить значение соответствующий условий активизации. Идейные соображения высшего порядка, а также консультация с широким активом способствует подготовки и реализации форм развития. Равным образом дальнейшее развитие различных форм деятельности играет важную роль в формировании позиций, занимаемых участниками в отношении поставленных задач. Товарищи! новая модель организационной деятельности требуют определения и уточнения соответствующий условий активизации.
-                </div>
-                <div class="portfolio">
-                    портфолио
-                </div>
-            </main>
-            <footer>
-                <div class="socials">
-                    <div class="social_heading">связаться со мной</div>
-                    <div class="social_block">
-                        <a href="mailto:george.bakhanovych@gmail.com" style="--j:1;" class="social_item">
-
-                            <svg viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;">
-                                <g>
-                                    <path d="m 207.073,388.141 c -72.867,0 -132.148,-59.283 -132.148,-132.15 0,-72.858 59.281,-132.134 132.148,-132.134 29.881,0 57.342,9.104 79.413,26.326 9.339,7.284 12.721,20.106 8.22,31.182 -1.316,3.242 -3.331,6.235 -5.989,8.895 l -18.557,18.557 c -4.875,4.872 -11.179,7.752 -17.753,8.11 -6.299,0.34 -12.32,-1.48 -17.328,-5.2 -7.465,-5.543 -17.148,-8.473 -28.005,-8.473 -27.741,0 -51.178,24.151 -51.178,52.736 0,28.588 22.957,51.845 51.178,51.845 13.161,0 22.482,-3.672 29.004,-8.286 -14.183,-0.629 -25.528,-12.364 -25.528,-26.7 v -17.646 c 0,-14.738 11.99,-26.727 26.727,-26.727 h 56.843 c 21.638,0 39.243,17.612 39.243,39.26 0,49.614 -26.943,79.19 -43.003,92.405 -24.169,19.888 -48.298,28 -83.287,28 z m 0,-235.481 c -56.984,0 -103.347,46.354 -103.347,103.333 0,56.986 46.361,103.348 103.347,103.348 32.421,0 48.903,-8.203 64.985,-21.438 12.14,-9.988 32.502,-32.384 32.502,-70.165 0,-5.767 -4.685,-10.459 -10.442,-10.459 H 239.35 v 13.499 h 24.621 c 4.504,0 8.75,2.108 11.473,5.698 2.723,3.589 3.609,8.246 2.395,12.583 -4.605,16.457 -25.322,47.581 -70.766,47.581 -44.1,0 -79.979,-36.178 -79.979,-80.646 0,-44.198 36.626,-81.537 79.979,-81.537 16.402,0 31.452,4.509 43.66,13.058 l 16.095,-16.094 C 250.191,159.138 229.588,152.66 207.073,152.66 Z" />
-                                    <g>
-                                        <path d="M430.975,512h-37.449c-7.952,0-14.401-6.447-14.401-14.401c0-7.953,6.449-14.401,14.401-14.401   h37.449c27.604,0,50.064-22.459,50.064-50.064V83.186c0-27.604-22.459-50.064-50.064-50.064H214.718   c-7.952,0-14.401-6.447-14.401-14.401s6.449-14.401,14.401-14.401h216.257c43.485,0,78.865,35.378,78.865,78.865v349.949   C509.84,476.622,474.461,512,430.975,512z" />
-                                        <path d="M289.409,507.68H81.025c-43.485,0-78.865-35.378-78.865-78.865V78.865   C2.16,35.378,37.539,0,81.025,0h32.408c7.952,0,14.401,6.447,14.401,14.401s-6.449,14.401-14.401,14.401H81.025   c-27.604,0-50.064,22.459-50.064,50.064v349.949c0,27.604,22.459,50.064,50.064,50.064h208.385c7.952,0,14.401,6.447,14.401,14.401   S297.363,507.68,289.409,507.68z" />
-                                    </g>
-                                    <path d="m 392.072,301.002 c -7.952,0 -14.401,-6.447 -14.401,-14.401 v -61.202 c 0,-7.953 6.449,-14.401 14.401,-14.401 7.952,0 14.401,6.447 14.401,14.401 v 61.202 c 0,7.954 -6.447,14.401 -14.401,14.401 z" />
-                                    <path d="m 422.673,270.401 h -61.202 c -7.952,0 -14.401,-6.447 -14.401,-14.401 0,-7.953 6.449,-14.401 14.401,-14.401 h 61.202 c 7.952,0 14.401,6.447 14.401,14.401 0,7.953 -6.447,14.401 -14.401,14.401 z" />
-                                </g>
-                            </svg>
-                        </a>
-                        <a href="#" style="--j:2;" class="social_item" target="_blank" rel="noopener">
-
-                            <svg viewBox="0 0 512.001 512.001" style="enable-background:new 0 0 512.001 512.001;">
-                                <g>
-                                    <g>
-                                        <path d="M432.464,512.001h-37.767c-8.02,0-14.523-6.502-14.523-14.523s6.503-14.523,14.523-14.523h37.767   c27.839,0,50.49-22.65,50.49-50.49V79.537c0-27.839-22.65-50.49-50.49-50.49H214.367c-8.02,0-14.523-6.502-14.523-14.523   s6.503-14.523,14.523-14.523h218.098c43.855,0,79.536,35.679,79.536,79.536v352.928C512,476.322,476.321,512.001,432.464,512.001z" />
-                                        <path d="M289.694,512.001H79.536C35.679,512.001,0,476.322,0,432.465V79.537   C0,35.68,35.679,0.001,79.536,0.001h32.684c8.02,0,14.523,6.502,14.523,14.523s-6.503,14.523-14.523,14.523H79.536   c-27.839,0-50.49,22.65-50.49,50.49v352.928c0,27.839,22.65,50.49,50.49,50.49h210.158c8.02,0,14.523,6.502,14.523,14.523   C304.218,505.499,297.714,512.001,289.694,512.001z" />
-                                    </g>
-                                    <path d="M 359.599,424.47 H 152.403 c -35.77,0 -64.87,-29.1 -64.87,-64.87 V 152.402 c 0,-35.769 29.1,-64.87 64.87,-64.87 h 207.196 c 35.77,0 64.87,29.1 64.87,64.87 v 207.197 c 0,35.769 -29.101,64.871 -64.87,64.871 z M 152.403,116.579 c -19.754,0 -35.824,16.07 -35.824,35.824 V 359.6 c 0,19.753 16.07,35.824 35.824,35.824 h 207.196 c 19.754,0 35.824,-16.07 35.824,-35.824 V 152.402 c 0,-19.753 -16.07,-35.824 -35.824,-35.824 H 152.403 Z m 103.598,228.725 c -49.242,0 -89.303,-40.061 -89.303,-89.303 0,-49.242 40.061,-89.303 89.303,-89.303 49.242,0 89.303,40.061 89.303,89.303 0,49.242 -40.061,89.303 -89.303,89.303 z m 0,-149.56 c -33.226,0 -60.256,27.03 -60.256,60.257 0,33.227 27.03,60.257 60.256,60.257 33.226,0 60.257,-27.03 60.257,-60.257 0,-33.227 -27.033,-60.257 -60.257,-60.257 z" />
-                                    <circle cx="346.40601" cy="164.504" r="20.448999" />
-                                </g>
-                            </svg>
-                        </a>
-                        <a href="https://t.me/e6voe9" style="--j:3;" class="social_item" target="_blank" rel="noopener">
-
-
-                            <svg viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;">
-                                <g>
-                                    <g>
-                                        <path d="M432.464,512h-37.766c-8.021,0-14.523-6.502-14.523-14.523s6.502-14.523,14.523-14.523h37.766   c27.839,0,50.49-22.65,50.49-50.49V79.536c0-27.839-22.65-50.49-50.49-50.49H214.367c-8.021,0-14.523-6.502-14.523-14.523   S206.346,0,214.367,0h218.097C476.321,0,512,35.679,512,79.536v352.928C512,476.321,476.321,512,432.464,512z" />
-                                        <path d="M289.693,512H79.536C35.679,512,0,476.321,0,432.464V79.536C0,35.679,35.679,0,79.536,0h32.684   c8.021,0,14.523,6.502,14.523,14.523s-6.502,14.523-14.523,14.523H79.536c-27.839,0-50.49,22.65-50.49,50.49v352.928   c0,27.839,22.65,50.49,50.49,50.49h210.157c8.021,0,14.523,6.502,14.523,14.523S297.714,512,289.693,512z" />
-                                    </g>
-                                    <path d="m 351.348,406.895 h -0.001 c -6.483,0 -12.698,-2.046 -17.969,-5.915 -0.109,-0.08 -0.216,-0.161 -0.322,-0.244 l -78.389,-60.974 -32.42,30.94 c -5.185,5.188 -12.047,8.04 -19.356,8.04 -12.064,0 -22.601,-7.716 -26.219,-19.202 -0.064,-0.205 -0.125,-0.41 -0.18,-0.617 L 157.574,288.082 97.756,270.42 C 87.211,267.308 80.093,258.197 79.628,247.211 79.162,236.223 85.484,226.542 95.733,222.548 l 296.09,-115.385 c 3.502,-1.365 7.151,-2.056 10.849,-2.056 8.965,0 17.381,4.03 23.09,11.056 5.651,6.955 7.835,16 5.991,24.814 l -50.554,241.69 c -2.935,14.038 -15.489,24.228 -29.851,24.228 z m -0.696,-29.269 c 0.235,0.155 0.449,0.222 0.696,0.222 0.121,0 1.191,-0.03 1.422,-1.128 l 50.552,-241.69 c 0.057,-0.272 0.036,-0.381 -0.103,-0.552 -0.151,-0.186 -0.388,-0.327 -0.548,-0.327 -0.073,0 -0.18,0.026 -0.302,0.074 l -285.93,111.425 57.173,16.882 c 4.854,1.433 8.612,5.292 9.919,10.182 l 20.171,75.532 39.968,-38.142 c 5.205,-4.968 13.264,-5.375 18.943,-0.957 z" />
-                                    <path d="m 219.677,360.209 c 0.456,1.476 17.095,-19.324 17.272,-20.862 l -7.463,-36.536 c -0.983,-4.813 0.761,-9.776 4.538,-12.915 L 370.822,176.222 c 3.292,-2.913 -0.532,-8.05 -4.265,-5.737 L 205.69,268.601 c -3.814,2.327 -5.782,6.775 -4.939,11.161 z" />
-                                </g>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-                <div class="copyright">
-                    &#169;&nbsp;2021. все права защищены. создано при помощи <a href="https://t.me/e6voe9" target="_blank" rel="noopener">e6voe9</a>
-                </div>
-                <div class="msg">
-                    fasjfvashfkjfasgs
-                </div>
-                <div class="footer_hack">
-                    <div class="socials">
-                        <div class="social_heading">связаться со мной</div>
-                        <div class="social_block">
-                            <a href="mailto:george.bakhanovych@gmail.com" style="--j:1;" class="social_item">
-
-                                <svg viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;">
-                                    <g>
-                                        <path d="m 207.073,388.141 c -72.867,0 -132.148,-59.283 -132.148,-132.15 0,-72.858 59.281,-132.134 132.148,-132.134 29.881,0 57.342,9.104 79.413,26.326 9.339,7.284 12.721,20.106 8.22,31.182 -1.316,3.242 -3.331,6.235 -5.989,8.895 l -18.557,18.557 c -4.875,4.872 -11.179,7.752 -17.753,8.11 -6.299,0.34 -12.32,-1.48 -17.328,-5.2 -7.465,-5.543 -17.148,-8.473 -28.005,-8.473 -27.741,0 -51.178,24.151 -51.178,52.736 0,28.588 22.957,51.845 51.178,51.845 13.161,0 22.482,-3.672 29.004,-8.286 -14.183,-0.629 -25.528,-12.364 -25.528,-26.7 v -17.646 c 0,-14.738 11.99,-26.727 26.727,-26.727 h 56.843 c 21.638,0 39.243,17.612 39.243,39.26 0,49.614 -26.943,79.19 -43.003,92.405 -24.169,19.888 -48.298,28 -83.287,28 z m 0,-235.481 c -56.984,0 -103.347,46.354 -103.347,103.333 0,56.986 46.361,103.348 103.347,103.348 32.421,0 48.903,-8.203 64.985,-21.438 12.14,-9.988 32.502,-32.384 32.502,-70.165 0,-5.767 -4.685,-10.459 -10.442,-10.459 H 239.35 v 13.499 h 24.621 c 4.504,0 8.75,2.108 11.473,5.698 2.723,3.589 3.609,8.246 2.395,12.583 -4.605,16.457 -25.322,47.581 -70.766,47.581 -44.1,0 -79.979,-36.178 -79.979,-80.646 0,-44.198 36.626,-81.537 79.979,-81.537 16.402,0 31.452,4.509 43.66,13.058 l 16.095,-16.094 C 250.191,159.138 229.588,152.66 207.073,152.66 Z" />
-                                        <g>
-                                            <path d="M430.975,512h-37.449c-7.952,0-14.401-6.447-14.401-14.401c0-7.953,6.449-14.401,14.401-14.401   h37.449c27.604,0,50.064-22.459,50.064-50.064V83.186c0-27.604-22.459-50.064-50.064-50.064H214.718   c-7.952,0-14.401-6.447-14.401-14.401s6.449-14.401,14.401-14.401h216.257c43.485,0,78.865,35.378,78.865,78.865v349.949   C509.84,476.622,474.461,512,430.975,512z" />
-                                            <path d="M289.409,507.68H81.025c-43.485,0-78.865-35.378-78.865-78.865V78.865   C2.16,35.378,37.539,0,81.025,0h32.408c7.952,0,14.401,6.447,14.401,14.401s-6.449,14.401-14.401,14.401H81.025   c-27.604,0-50.064,22.459-50.064,50.064v349.949c0,27.604,22.459,50.064,50.064,50.064h208.385c7.952,0,14.401,6.447,14.401,14.401   S297.363,507.68,289.409,507.68z" />
-                                        </g>
-                                        <path d="m 392.072,301.002 c -7.952,0 -14.401,-6.447 -14.401,-14.401 v -61.202 c 0,-7.953 6.449,-14.401 14.401,-14.401 7.952,0 14.401,6.447 14.401,14.401 v 61.202 c 0,7.954 -6.447,14.401 -14.401,14.401 z" />
-                                        <path d="m 422.673,270.401 h -61.202 c -7.952,0 -14.401,-6.447 -14.401,-14.401 0,-7.953 6.449,-14.401 14.401,-14.401 h 61.202 c 7.952,0 14.401,6.447 14.401,14.401 0,7.953 -6.447,14.401 -14.401,14.401 z" />
-                                    </g>
-                                </svg>
-                            </a>
-                            <a href="https://www.instagram.com/e6voe9/" style="--j:2;" class="social_item" target="_blank" rel="noopener">
-
-                                <svg viewBox="0 0 512.001 512.001" style="enable-background:new 0 0 512.001 512.001;">
-                                    <g>
-                                        <g>
-                                            <path d="M432.464,512.001h-37.767c-8.02,0-14.523-6.502-14.523-14.523s6.503-14.523,14.523-14.523h37.767   c27.839,0,50.49-22.65,50.49-50.49V79.537c0-27.839-22.65-50.49-50.49-50.49H214.367c-8.02,0-14.523-6.502-14.523-14.523   s6.503-14.523,14.523-14.523h218.098c43.855,0,79.536,35.679,79.536,79.536v352.928C512,476.322,476.321,512.001,432.464,512.001z" />
-                                            <path d="M289.694,512.001H79.536C35.679,512.001,0,476.322,0,432.465V79.537   C0,35.68,35.679,0.001,79.536,0.001h32.684c8.02,0,14.523,6.502,14.523,14.523s-6.503,14.523-14.523,14.523H79.536   c-27.839,0-50.49,22.65-50.49,50.49v352.928c0,27.839,22.65,50.49,50.49,50.49h210.158c8.02,0,14.523,6.502,14.523,14.523   C304.218,505.499,297.714,512.001,289.694,512.001z" />
-                                        </g>
-                                        <path d="M 359.599,424.47 H 152.403 c -35.77,0 -64.87,-29.1 -64.87,-64.87 V 152.402 c 0,-35.769 29.1,-64.87 64.87,-64.87 h 207.196 c 35.77,0 64.87,29.1 64.87,64.87 v 207.197 c 0,35.769 -29.101,64.871 -64.87,64.871 z M 152.403,116.579 c -19.754,0 -35.824,16.07 -35.824,35.824 V 359.6 c 0,19.753 16.07,35.824 35.824,35.824 h 207.196 c 19.754,0 35.824,-16.07 35.824,-35.824 V 152.402 c 0,-19.753 -16.07,-35.824 -35.824,-35.824 H 152.403 Z m 103.598,228.725 c -49.242,0 -89.303,-40.061 -89.303,-89.303 0,-49.242 40.061,-89.303 89.303,-89.303 49.242,0 89.303,40.061 89.303,89.303 0,49.242 -40.061,89.303 -89.303,89.303 z m 0,-149.56 c -33.226,0 -60.256,27.03 -60.256,60.257 0,33.227 27.03,60.257 60.256,60.257 33.226,0 60.257,-27.03 60.257,-60.257 0,-33.227 -27.033,-60.257 -60.257,-60.257 z" />
-                                        <circle cx="346.40601" cy="164.504" r="20.448999" />
-                                    </g>
-                                </svg>
-                            </a>
-                            <a href="https://t.me/e6voe9" style="--j:3;" class="social_item" target="_blank" rel="noopener">
-
-
-                                <svg viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;">
-                                    <g>
-                                        <g>
-                                            <path d="M432.464,512h-37.766c-8.021,0-14.523-6.502-14.523-14.523s6.502-14.523,14.523-14.523h37.766   c27.839,0,50.49-22.65,50.49-50.49V79.536c0-27.839-22.65-50.49-50.49-50.49H214.367c-8.021,0-14.523-6.502-14.523-14.523   S206.346,0,214.367,0h218.097C476.321,0,512,35.679,512,79.536v352.928C512,476.321,476.321,512,432.464,512z" />
-                                            <path d="M289.693,512H79.536C35.679,512,0,476.321,0,432.464V79.536C0,35.679,35.679,0,79.536,0h32.684   c8.021,0,14.523,6.502,14.523,14.523s-6.502,14.523-14.523,14.523H79.536c-27.839,0-50.49,22.65-50.49,50.49v352.928   c0,27.839,22.65,50.49,50.49,50.49h210.157c8.021,0,14.523,6.502,14.523,14.523S297.714,512,289.693,512z" />
-                                        </g>
-                                        <path d="m 351.348,406.895 h -0.001 c -6.483,0 -12.698,-2.046 -17.969,-5.915 -0.109,-0.08 -0.216,-0.161 -0.322,-0.244 l -78.389,-60.974 -32.42,30.94 c -5.185,5.188 -12.047,8.04 -19.356,8.04 -12.064,0 -22.601,-7.716 -26.219,-19.202 -0.064,-0.205 -0.125,-0.41 -0.18,-0.617 L 157.574,288.082 97.756,270.42 C 87.211,267.308 80.093,258.197 79.628,247.211 79.162,236.223 85.484,226.542 95.733,222.548 l 296.09,-115.385 c 3.502,-1.365 7.151,-2.056 10.849,-2.056 8.965,0 17.381,4.03 23.09,11.056 5.651,6.955 7.835,16 5.991,24.814 l -50.554,241.69 c -2.935,14.038 -15.489,24.228 -29.851,24.228 z m -0.696,-29.269 c 0.235,0.155 0.449,0.222 0.696,0.222 0.121,0 1.191,-0.03 1.422,-1.128 l 50.552,-241.69 c 0.057,-0.272 0.036,-0.381 -0.103,-0.552 -0.151,-0.186 -0.388,-0.327 -0.548,-0.327 -0.073,0 -0.18,0.026 -0.302,0.074 l -285.93,111.425 57.173,16.882 c 4.854,1.433 8.612,5.292 9.919,10.182 l 20.171,75.532 39.968,-38.142 c 5.205,-4.968 13.264,-5.375 18.943,-0.957 z" />
-                                        <path d="m 219.677,360.209 c 0.456,1.476 17.095,-19.324 17.272,-20.862 l -7.463,-36.536 c -0.983,-4.813 0.761,-9.776 4.538,-12.915 L 370.822,176.222 c 3.292,-2.913 -0.532,-8.05 -4.265,-5.737 L 205.69,268.601 c -3.814,2.327 -5.782,6.775 -4.939,11.161 z" />
-                                    </g>
-                                </svg>
-                            </a>
+            </div>
+            <img width="875" height="962" class="main-screen__blured-green" src="img/main-screen__green--top-left.png" alt="main-screen__green--top-left">
+            <div id="lottie"></div>
+        </section>
+        <section class="help" id="help">
+            <div class="container">
+                <div class="help__inner">
+                    <h1 class="title help__title">AI System will assist you</h1>
+                    <div class="help__content">
+                        <div class="help__item">
+                            <div class="help__head">
+                                <img width="77" height="77" src="img/icons/help/help1.svg" alt="help1" class="help__img">
+                                <h2 class="help__name">It will dial up your entire client database and will redirect the “warm” customers to your human managers</h2>
+                            </div>
+                            <div class="help__body">
+                                <ul class="marked-list help__marked-list marked-list--arrow">
+                                    <li class="marked-list__item">You only pay for successful calls</li>
+                                    <li class="marked-list__item">Intelligent recognition of speech technology is used</li>
+                                    <li class="marked-list__item">The robot creates tasks on its own or puts the client through to a human manager</li>
+                                    <li class="marked-list__item">All data is saved in a cloud – you won’t have to buy any hardware or software.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="help__item">
+                            <div class="help__head">
+                                <img width="80" height="80" src="img/icons/help/help2.svg" alt="help2" class="help__img">
+                                <h2 class="help__name">The robot will tell about a new offer or product to thousands of customers simultaneously</h2>
+                            </div>
+                            <div class="help__body">
+                                <ul class="marked-list help__marked-list marked-list--arrow">
+                                    <li class="marked-list__item">You will be able to return clients to your company</li>
+                                    <li class="marked-list__item">You will get new orders from old databases</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="help__item">
+                            <div class="help__head">
+                                <img width="75" height="75" src="img/icons/help/help3.svg" alt="help3" class="help__img">
+                                <h2 class="help__name">The robot can gather a full hall of people automatically reminding the clients about an upcoming event</h2>
+                            </div>
+                            <div class="help__body">
+                                <ul class="marked-list help__marked-list marked-list--arrow">
+                                    <li class="marked-list__item">The robot will call every guest of an event one hour before, several days before, or a week before its’ start</li>
+                                    <li class="marked-list__item">The robot will find out how many people have changed their plans so as to resell the vacated places to other people.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="help__item">
+                            <div class="help__head">
+                                <img width="78" height="78" src="img/icons/help/help4.svg" alt="help4" class="help__img">
+                                <h2 class="help__name">It accepts incoming calls from customers 24/7</h2>
+                            </div>
+                            <div class="help__body">
+                                <ul class="marked-list help__marked-list marked-list--arrow">
+                                    <li class="marked-list__item">It is capable of accepting calls 24/7 and solving 95% of tasks without the supervision of a human operator</li>
+                                    <li class="marked-list__item">The robot  will ask a client about the reason for a call in details, write the detailed information to the CRM system, give a client all necessary information and, if needed, send the detailed info via a messenger or assign the task a human manager.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="help__item">
+                            <div class="help__head">
+                                <img width="86" height="73" src="img/icons/help/help5.svg" alt="help5" class="help__img">
+                                <h2 class="help__name">It will perform an urgent mass interview without any call center expenses</h2>
+                            </div>
+                            <div class="help__body">
+                                <p class="help__text">Whenever it’s necessary to gather statistics or to understand why clients are leaving, why clients pay less often or less money for a product, or whether a new product or a service is necessary, to make the right managerial decision, the robot comes in handy.</p>
+                            </div>
+                        </div>
+                        <div class="help__item">
+                            <div class="help__head">
+                                <img width="82" height="84" src="img/icons/help/help6.svg" alt="help6" class="help__img">
+                                <h2 class="help__name">It can confirm requests and inform about the delivery on time</h2>
+                            </div>
+                            <div class="help__body">
+                                <p class="help__text">Connect the AI System to your CRM so as to let it automatically call a customer, confirm his requests, and inform him about delivery to home, office, or a distribution point</p>
+                            </div>
+                        </div>
+                        <div class="help__item">
+                            <div class="help__head">
+                                <img width="81" height="81" src="img/icons/help/help7.svg" alt="help7" class="help__img">
+                                <h2 class="help__name">It will select the most suitable candidates for an interview from a database</h2>
+                            </div>
+                            <div class="help__body">
+                                <ul class="marked-list help__marked-list marked-list--arrow">
+                                    <li class="marked-list__item">The robot can call all applicants and perform a preliminary phone interview. Based on its results, it will select suitable candidates and pass through their info to HR managers</li>
+                                    <li class="marked-list__item">The HR department will only interview the pre-filtered candidates so as not to waste their time making useless calls.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="help__item">
+                            <div class="help__head">
+                                <img width="71" height="71" src="img/icons/help/help8.svg" alt="help8" class="help__img">
+                                <h2 class="help__name">It will increase the flow of repaying overdue debts</h2>
+                            </div>
+                            <div class="help__body">
+                            	<p class="help__text">It will make an automatic call to a debtor, without disturbing a manager or a call center operator.</p>
+                            	<p class="help__text">AI System sees the debtors in the database, dials them, and reads out the variable characteristics of the debt:</p>
+                                <ul class="marked-list help__marked-list marked-list--arrow">
+                                    <li class="marked-list__item">Amount of money</li>
+                                    <li class="marked-list__item">Ways to pay</li>
+                                    <li class="marked-list__item">Documents required</li>
+                                    <li class="marked-list__item">It sends the receipt.</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                    <div class="msg">
-                        fasjfvashfkjfasgs
+                </div>
+            </div>
+            <div id="particles-js"></div>
+        </section>
+        <section class="how" id="how">
+            <div class="container">
+                <div class="how__inner">
+                    <h1 class="title how__title">How does the AI System work?</h1>
+                    <div class="how__content">
+                        <div class="how__item">
+                            <h2 class="how__name">Makes a call</h2>
+                            <p class="how__text">AI System makes an automatic call to every phone number on the database. It is capable of calling 100,000 subscribers per minute. You can adjust the speed of the calls, the number of repeated calls on each number, and the frequency of repeated calls if the subscriber didn’t accept the call.</p>
+                        </div>
+                        <div class="how__item">
+                            <h2 class="how__name">Communicates</h2>
+                            <p class="how__text">AI System plays the message to a subscriber.</p>
+                            <p class="how__text">You can record the scenario on your own to a phone and upload it to the system.</p>
+                            <p class="how__text">AI System plays the message to a subscriber.</p>
+                            <p class="how__text">You can also use our professional narrators service.</p>
+                        </div>
+                        <div class="how__item">
+                            <h2 class="how__name">Moves a deal to the next stage</h2>
+                            <p class="how__text">The AI System takes the next step in the algorithm according to the subscriber’s action.</p>
+                            <p class="how__text">It can be:</p>
+                            <ul class="marked-list how__marked-list marked-list--arrow">
+                                <li class="marked-list__item">putting a call through to a human manager</li>
+                                <li class="marked-list__item">sending an SMS or a message via a messenger</li>
+                                <li class="marked-list__item">recording data of the deal’s profile (name, date, time)</li>
+                                <li class="marked-list__item">creating a deal or a task in the CRM system.</li>
+                            </ul>
+                        </div>
+                        <div class="how__item">
+                            <h2 class="how__name">Forms the statistics</h2>
+                            <p class="how__text">You will be able to evaluate the efficacy of the automatic calls in action with the help of such tools as:</p>
+                            <ul class="marked-list how__marked-list marked-list--arrow">
+                                <li class="marked-list__item">Clicks report</li>
+                                <li class="marked-list__item">Goals summary report</li>
+                                <li class="marked-list__item">Expenses report.</li>
+                            </ul>
+                        </div>
+                        <div class="how__decorator"></div>
                     </div>
                 </div>
-            </footer>
+            </div>
+        </section>
+        <section class="what-do" id="what-do">
+            <div class="container">
+                <div class="what-do__inner">
+                    <h1 class="title what-do__title">What the AI System is capable of doing?</h1>
+                    <ul class="marked-list what-do__marked-list marked-list--arrow">
+                        <li class="marked-list__item">Plays messages</li>
+                        <li class="marked-list__item">Supports a dialog according to the predefined scenarios</li>
+                        <li class="marked-list__item">Puts a call through to any number</li>
+                        <li class="marked-list__item">Sends SMS messages after the call to e-mail, WhatsApp, etc.</li>
+                        <li class="marked-list__item">Before connecting to the subscriber it displays a message to the operator in the form of the text of the previous conversation with the subscriber through speech synthesizer</li>
+                        <li class="marked-list__item">Creates goals for the calls and monitors their achievement</li>
+                        <li class="marked-list__item">Sends statistics of responses online mode</li>
+                        <li class="marked-list__item">Gathers and uses data (name, date, time, etc.) during the calls, records it in the profile of a call, and forwards it to a human manager using an e-mail, messenger, and SMS.</li>
+                    </ul>
+                </div>
+            </div>
+            <img width="1046" height="680" class="what-do__green-blured what-do__green-blured--top-left" src="img/what-do__green--top-left.png" alt="what-do__green--top-left">
+            <img width="821" height="680" class="what-do__green-blured what-do__green-blured--bottom-right" src="img/what-do__green--bottom-right.png" alt="what-do__green--bottom-right">
+        </section>
+        <section class="testimonials" id="testimonials">
+            <div class="container">
+                <div class="testimonials__inner">
+                    <h1 class="title testimonials__title">Testimonials</h1>
+                    <div class="testimonials__buttons">
+                        <svg class="slider-btn slider-btn--prev" width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle class="slider-btn__circle" cx="22.5" cy="22.5" r="22.5" />
+                            <path class="slider-btn__arrow" d="M28.9155 22.5001C28.9155 22.8406 28.7855 23.181 28.526 23.4407L20.3563 31.6102C19.8366 32.1299 18.9941 32.1299 18.4746 31.6102C17.9551 31.0908 17.9551 30.2483 18.4746 29.7286L25.7035 22.5001L18.4748 15.2715C17.9553 14.7518 17.9553 13.9094 18.4748 13.39C18.9943 12.8701 19.8369 12.8701 20.3566 13.39L28.5262 21.5594C28.7858 21.8192 28.9155 22.1597 28.9155 22.5001Z" />
+                        </svg>
+                        <svg class="slider-btn slider-btn--next" width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle class="slider-btn__circle" cx="22.5" cy="22.5" r="22.5" />
+                            <path class="slider-btn__arrow" d="M28.9155 22.5001C28.9155 22.8406 28.7855 23.181 28.526 23.4407L20.3563 31.6102C19.8366 32.1299 18.9941 32.1299 18.4746 31.6102C17.9551 31.0908 17.9551 30.2483 18.4746 29.7286L25.7035 22.5001L18.4748 15.2715C17.9553 14.7518 17.9553 13.9094 18.4748 13.39C18.9943 12.8701 19.8369 12.8701 20.3566 13.39L28.5262 21.5594C28.7858 21.8192 28.9155 22.1597 28.9155 22.5001Z" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonials__swiper swiper-container">
+                <div class="testimonials__swiper-body swiper-wrapper">
+                    <div class="testimonials__item swiper-slide">
+                        <div class="testimonials__people">
+                            <img width="90" height="90" class="testimonials__img" src="img/testimonials/testimonials1.png" alt="testimonials1">
+                            <div class="testimonials__about">
+                                <h2 class="testimonials__name">John Doe</h2>
+                                <p class="testimonials__company">Gastreet show</p>
+                            </div>
+                        </div>
+                        <h3 class="testimonials__stage">Problem</h3>
+                        <p class="testimonials__text">At nisl viverra at enim arcu. Mauris mattis sapien, sed vitae orci. Elementum malesuada vehicula. Adipiscing est nisi sit lobortis.</p>
+                        <h3 class="testimonials__stage">Task</h3>
+                        <p class="testimonials__text">At nisl viverra at enim arcu. Mauris sed vitae orci. Elementum malesuada diam gravida vehicula. Adipiscing est nisi sit lobortis. </p>
+                        <h3 class="testimonials__stage">Realization</h3>
+                        <p class="testimonials__text">Mauris mattis sapien, sed vitae orci. Elementum malesuada diam gravida vehicula. Adipiscing est nisi sit lobortis.</p>
+                        <div class="testimonials__player">
+                        	<audio preload="none" src="audio/audio1.mp3" controls controlsList="nodownload" dir="rtl"></audio>
+                        </div>
+                        <div class="testimonials__result">
+                            <h3 class="testimonials__result-title">Result</h3>
+                            <p class="testimonials__result-item">Contacts in base - <b>3514</b></p>
+                            <p class="testimonials__result-item">Calling - <b>90%</b></p>
+                            <p class="testimonials__result-item">Completed the survey - <b>50%</b></p>
+                            <p class="testimonials__result-item">Savings on the call center - <b>1000$</b></p>
+                        </div>
+                    </div>
+                    <div class="testimonials__item swiper-slide">
+                        <div class="testimonials__people">
+                            <img width="90" height="90" class="testimonials__img" src="img/testimonials/testimonials2.png" alt="testimonials1">
+                            <div class="testimonials__about">
+                                <h2 class="testimonials__name">John Doe</h2>
+                                <p class="testimonials__company">Gastreet show</p>
+                            </div>
+                        </div>
+                        <h3 class="testimonials__stage">Problem</h3>
+                        <p class="testimonials__text">At nisl viverra at enim arcu. Mauris mattis sapien, sed vitae orci. Elementum malesuada vehicula. Adipiscing est nisi sit lobortis.</p>
+                        <h3 class="testimonials__stage">Task</h3>
+                        <p class="testimonials__text">At nisl viverra at enim arcu. Mauris sed vitae orci. Elementum malesuada diam gravida vehicula. Adipiscing est nisi sit lobortis. </p>
+                        <h3 class="testimonials__stage">Realization</h3>
+                        <p class="testimonials__text">Mauris mattis sapien, sed vitae orci. Elementum malesuada diam gravida vehicula. Adipiscing est nisi sit lobortis.</p>
+                        <div class="testimonials__player">
+                        	<audio preload="none" src="audio/audio1.mp3" controls controlsList="nodownload"></audio>
+                        </div>
+                        <div class="testimonials__result">
+                            <h3 class="testimonials__result-title">Result</h3>
+                            <p class="testimonials__result-item">Contacts in base - <b>3514</b></p>
+                            <p class="testimonials__result-item">Calling - <b>90%</b></p>
+                            <p class="testimonials__result-item">Completed the survey - <b>50%</b></p>
+                            <p class="testimonials__result-item">Savings on the call center - <b>1000$</b></p>
+                        </div>
+                    </div>
+                    <div class="testimonials__item swiper-slide">
+                        <div class="testimonials__people">
+                            <img width="90" height="90" class="testimonials__img" src="img/testimonials/testimonials1.png" alt="testimonials1">
+                            <div class="testimonials__about">
+                                <h2 class="testimonials__name">John Doe</h2>
+                                <p class="testimonials__company">Gastreet show</p>
+                            </div>
+                        </div>
+                        <h3 class="testimonials__stage">Problem</h3>
+                        <p class="testimonials__text">At nisl viverra at enim arcu. Mauris mattis sapien, sed vitae orci. Elementum malesuada vehicula. Adipiscing est nisi sit lobortis.</p>
+                        <h3 class="testimonials__stage">Task</h3>
+                        <p class="testimonials__text">At nisl viverra at enim arcu. Mauris sed vitae orci. Elementum malesuada diam gravida vehicula. Adipiscing est nisi sit lobortis. </p>
+                        <h3 class="testimonials__stage">Realization</h3>
+                        <p class="testimonials__text">Mauris mattis sapien, sed vitae orci. Elementum malesuada diam gravida vehicula. Adipiscing est nisi sit lobortis.</p>
+                        <div class="testimonials__player">
+                        	<audio preload="none" src="audio/audio1.mp3" controls controlsList="nodownload"></audio>
+                        </div>
+                        <div class="testimonials__result">
+                            <h3 class="testimonials__result-title">Result</h3>
+                            <p class="testimonials__result-item">Contacts in base - <b>3514</b></p>
+                            <p class="testimonials__result-item">Calling - <b>90%</b></p>
+                            <p class="testimonials__result-item">Completed the survey - <b>50%</b></p>
+                            <p class="testimonials__result-item">Savings on the call center - <b>1000$</b></p>
+                        </div>
+                    </div>
+                    <div class="testimonials__item swiper-slide">
+                        <div class="testimonials__people">
+                            <img width="90" height="90" class="testimonials__img" src="img/testimonials/testimonials1.png" alt="testimonials1">
+                            <div class="testimonials__about">
+                                <h2 class="testimonials__name">John Doe</h2>
+                                <p class="testimonials__company">Gastreet show</p>
+                            </div>
+                        </div>
+                        <h3 class="testimonials__stage">Problem</h3>
+                        <p class="testimonials__text">At nisl viverra at enim arcu. Mauris mattis sapien, sed vitae orci. Elementum malesuada vehicula. Adipiscing est nisi sit lobortis.</p>
+                        <h3 class="testimonials__stage">Task</h3>
+                        <p class="testimonials__text">At nisl viverra at enim arcu. Mauris sed vitae orci. Elementum malesuada diam gravida vehicula. Adipiscing est nisi sit lobortis. </p>
+                        <h3 class="testimonials__stage">Realization</h3>
+                        <p class="testimonials__text">Mauris mattis sapien, sed vitae orci. Elementum malesuada diam gravida vehicula. Adipiscing est nisi sit lobortis.</p>
+                        <div class="testimonials__player">
+                        	<audio preload="none" src="audio/audio1.mp3" controls controlsList="nodownload"></audio>
+                        </div>
+                        <div class="testimonials__result">
+                            <h3 class="testimonials__result-title">Result</h3>
+                            <p class="testimonials__result-item">Contacts in base - <b>3514</b></p>
+                            <p class="testimonials__result-item">Calling - <b>90%</b></p>
+                            <p class="testimonials__result-item">Completed the survey - <b>50%</b></p>
+                            <p class="testimonials__result-item">Savings on the call center - <b>1000$</b></p>
+                        </div>
+                    </div>
+                    <div class="testimonials__item swiper-slide">
+                        <div class="testimonials__people">
+                            <img width="90" height="90" class="testimonials__img" src="img/testimonials/testimonials1.png" alt="testimonials1">
+                            <div class="testimonials__about">
+                                <h2 class="testimonials__name">John Doe</h2>
+                                <p class="testimonials__company">Gastreet show</p>
+                            </div>
+                        </div>
+                        <h3 class="testimonials__stage">Problem</h3>
+                        <p class="testimonials__text">At nisl viverra at enim arcu. Mauris mattis sapien, sed vitae orci. Elementum malesuada vehicula. Adipiscing est nisi sit lobortis.</p>
+                        <h3 class="testimonials__stage">Task</h3>
+                        <p class="testimonials__text">At nisl viverra at enim arcu. Mauris sed vitae orci. Elementum malesuada diam gravida vehicula. Adipiscing est nisi sit lobortis. </p>
+                        <h3 class="testimonials__stage">Realization</h3>
+                        <p class="testimonials__text">Mauris mattis sapien, sed vitae orci. Elementum malesuada diam gravida vehicula. Adipiscing est nisi sit lobortis.</p>
+                        <div class="testimonials__player">
+                        	<audio preload="none" src="audio/audio1.mp3" controls controlsList="nodownload"></audio>
+                        </div>
+                        <div class="testimonials__result">
+                            <h3 class="testimonials__result-title">Result</h3>
+                            <p class="testimonials__result-item">Contacts in base - <b>3514</b></p>
+                            <p class="testimonials__result-item">Calling - <b>90%</b></p>
+                            <p class="testimonials__result-item">Completed the survey - <b>50%</b></p>
+                            <p class="testimonials__result-item">Savings on the call center - <b>1000$</b></p>
+                        </div>
+                    </div>
+                    <div class="testimonials__item swiper-slide">
+                        <div class="testimonials__people">
+                            <img width="90" height="90" class="testimonials__img" src="img/testimonials/testimonials1.png" alt="testimonials1">
+                            <div class="testimonials__about">
+                                <h2 class="testimonials__name">John Doe</h2>
+                                <p class="testimonials__company">Gastreet show</p>
+                            </div>
+                        </div>
+                        <h3 class="testimonials__stage">Problem</h3>
+                        <p class="testimonials__text">At nisl viverra at enim arcu. Mauris mattis sapien, sed vitae orci. Elementum malesuada vehicula. Adipiscing est nisi sit lobortis.</p>
+                        <h3 class="testimonials__stage">Task</h3>
+                        <p class="testimonials__text">At nisl viverra at enim arcu. Mauris sed vitae orci. Elementum malesuada diam gravida vehicula. Adipiscing est nisi sit lobortis. </p>
+                        <h3 class="testimonials__stage">Realization</h3>
+                        <p class="testimonials__text">Mauris mattis sapien, sed vitae orci. Elementum malesuada diam gravida vehicula. Adipiscing est nisi sit lobortis.</p>
+                        <div class="testimonials__player">
+                        	<audio preload="none" src="audio/audio1.mp3" controls controlsList="nodownload"></audio>
+                        </div>
+                        <div class="testimonials__result">
+                            <h3 class="testimonials__result-title">Result</h3>
+                            <p class="testimonials__result-item">Contacts in base - <b>3514</b></p>
+                            <p class="testimonials__result-item">Calling - <b>90%</b></p>
+                            <p class="testimonials__result-item">Completed the survey - <b>50%</b></p>
+                            <p class="testimonials__result-item">Savings on the call center - <b>1000$</b></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+        <section class="faq" id="faq">
+            <div class="container">
+                <div class="faq__inner">
+                    <h1 class="title faq__title">FAQ</h1>
+                    <div class="faq__content">
+                        <div class="faq__item">
+                            <button class="faq__head">
+                                <span class="faq__name">Does the robot recognize answers?</span>
+                                <img width="30" height="30" src="img/icons/accordion-mark.svg" alt="accordion-mark1" class="faq__mark">
+                            </button>
+                            <div class="faq__body">
+                                <p class="faq__text">You can receive clients’ answers by clicking the phone buttons or by using a voice recognition. The robot not only recognizes the answers – but it also records them and turns them into system commands.</p>
+                            </div>
+                        </div>
+                        <div class="faq__item">
+                            <button class="faq__head">
+                                <span class="faq__name">Can it be integrated with our system?</span>
+                                <img width="30" height="30" src="img/icons/accordion-mark.svg" alt="accordion-mark1" class="faq__mark">
+                            </button>
+                            <div class="faq__body">
+                                <p class="faq__text">Integration with a third-party service is made via API. Learn the <a href="#">documentation</a> or contact our specialist.</p>
+                            </div>
+                        </div>
+                        <div class="faq__item">
+                            <button class="faq__head">
+                                <span class="faq__name">Will the money burn down if we do not use the Infobot for a long period of time?</span>
+                                <img width="30" height="30" src="img/icons/accordion-mark.svg" alt="accordion-mark1" class="faq__mark">
+                            </button>
+                            <div class="faq__body">
+                                <p class="faq__text">The money stays on the account in the system until you address the service again.</p>
+                            </div>
+                        </div>
+                        <div class="faq__item">
+                            <button class="faq__head">
+                                <span class="faq__name">Can I record my own voice?</span>
+                                <img width="30" height="30" src="img/icons/accordion-mark.svg" alt="accordion-mark1" class="faq__mark">
+                            </button>
+                            <div class="faq__body">
+                                <p class="faq__text">You can record the text used for calls using a dictaphone and insert it into a special block. It is also possible to use a voice synthesizer. To do that, simply paste the text into a special field so a robot can voice it. You can also use the services of our professional narrators.</p>
+                            </div>
+                        </div>
+                        <div class="faq__item">
+                            <button class="faq__head">
+                                <span class="faq__name">How is the money withdrawn from the account?</span>
+                                <img width="30" height="30" src="img/icons/accordion-mark.svg" alt="accordion-mark1" class="faq__mark">
+                            </button>
+                            <div class="faq__body">
+                                <p class="faq__text">The payment for each call is withdrawn after the call is completed. As soon as a person picks up the phone, the payment for the connection is withdrawn. Afterwards you will be charged for the traffic, according to the chosen <a href="#">base rate</a>.</p>
+                            </div>
+                        </div>
+                        <div class="faq__item">
+                            <button class="faq__head">
+                                <span class="faq__name">How can we be sure you won’t sell our database to competitors?</span>
+                                <img width="30" height="30" src="img/icons/accordion-mark.svg" alt="accordion-mark1" class="faq__mark">
+                            </button>
+                            <div class="faq__body">
+                                <p class="faq__text">We do not provide any databases for the use of voice spamming. According to paragraph 6.1. of the AI System Service Offer, no data entered by a user is available (including the personal data of message recipients and the content of the information sent by users).</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="logo footer__logo">
+                    <a href="#root" class="logo__link">
+                        <img width="149" height="37" src="img/icons/logo.svg" alt="logo" class="logo__img">
+                    </a>
+                </div>
+                <div class="footer__buttons">
+                    <a class="phone footer__phone" href="tel:+74992868711">
+                        <b>+7 499 286 87 11</b>
+                    </a>
+                    <button class="button callback-open-btn">Talk to the robot</button>
+                </div>
+            </div>
         </div>
-    </div>
-    <div id="splat" class="splat"></div>
-    <script async src="js/main.js"></script>
+    </footer>
+    <!-- footer -->
+    <!-- modal -->
+    <section class="callback">
+        <div class="callback__inner">
+            <div class="callback__bg callback-close-btn"></div>
+            <form class="callback__form" method="POST" action="">
+                <div class="callback__form-inner">
+                    <h1 class="callback__title">Callback</h1>
+                    <div class="callback__content">
+                        <div class="callback__input-box">
+                        	<div class="callback__lang"></div>
+                            <input class="callback__input" name="phone" type="number">
+                            <input class="callback__input--lang" type="text" name="lang" hidden>
+                            <div class="choose-lang">
+                            	<div class="choose-lang__item">
+                        			<img data-lang="israel" width="512" height="512" class="callback__flag" src="img/icons/lang/israel.svg" alt="israel flag">
+                        			<span class="choose-lang__code">+972</span>
+                        		</div>
+                            	<div class="choose-lang__item">
+                        			<img data-lang="usa" width="512" height="512" class="callback__flag" src="img/icons/lang/usa.svg" alt="usa flag">
+                        			<span class="choose-lang__code">+1</span>
+                        		</div>
+                            	<div class="choose-lang__item">
+                        			<img data-lang="england" width="512" height="512" class="callback__flag" src="img/icons/lang/england.svg" alt="england flag">
+                        			<span class="choose-lang__code">+44</span>
+                        		</div>
+                            	<div class="choose-lang__item">
+                        			<img data-lang="australia" width="512" height="512" class="callback__flag" src="img/icons/lang/australia.svg" alt="australia flag">
+                        			<span class="choose-lang__code">+61</span>
+                        		</div>
+                            	<div class="choose-lang__item">
+                        			<img data-lang="canada" width="512" height="512" class="callback__flag" src="img/icons/lang/canada.svg" alt="canada">
+                        			<span class="choose-lang__code">+1</span>
+                        		</div>
+                            </div>
+                        </div>
+                        <button class="button callback__btn">Callback</button>
+                    </div>
+                </div>
+                <div class="burger-callback callback-close-btn">
+                    <div class="burger-callback__inner">
+                        <div class="burger-callback__item"></div>
+                        <div class="burger-callback__item"></div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- modal -->
+    <!-- scripts -->
+    <script src="js/main.js" defer></script>
+    <script src="js/lottie.js" defer></script>
+    <script src="js/swiper.js" defer></script>
+    <!-- scripts -->
 </body>
 
 </html>
