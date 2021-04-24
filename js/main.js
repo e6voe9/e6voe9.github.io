@@ -1,7 +1,6 @@
 // burger open/close script
 let burgers = document.querySelectorAll('.burger'),
     menu = document.querySelector('.menu'),
-    language = document.querySelector('.language'),
     burger = document.querySelector('.burger');
 if (window.innerWidth < 1200) {
     burgers = document.querySelectorAll('.menu-button-open')
@@ -32,7 +31,6 @@ function openMenu() {
 
 function toggleBurger() {
     burger.classList.toggle('burger--active');
-    language.classList.toggle('language--active');
     if (menu.style.maxHeight) {
         closeMenu();
     } else {
