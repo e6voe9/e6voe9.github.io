@@ -1093,6 +1093,9 @@ html {
     margin-left: 30px;
   }
 
+  .help__inner {
+    padding: 150px 0 0 0;
+  }
   .help__content {
     align-items: flex-start;
     flex-direction: row;
@@ -1100,6 +1103,14 @@ html {
     flex-wrap: wrap;
   }
   .help__item {
+    width: 46.5%;
+  }
+  .help__item:last-child .help__marked-list {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  .help__item:last-child .help__marked-list .marked-list__item {
     width: 46.5%;
   }
 
@@ -1126,6 +1137,9 @@ html {
     margin-top: 0;
   }
 
+  .main-screen {
+    height: 100vh;
+  }
   .main-screen__inner {
     padding: 100px 0 100px 0;
   }
@@ -1146,8 +1160,8 @@ html {
   }
 
   #lottie {
-    bottom: 0;
-    left: 33%;
+    bottom: -34px;
+    left: 36%;
     transform: translate3d(0px, 0px, 0px);
     max-height: 600px;
   }
@@ -1164,7 +1178,7 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 70px 0 0 0;
+    padding: 170px 0 0 0;
   }
   .how__title {
     align-self: flex-start;
