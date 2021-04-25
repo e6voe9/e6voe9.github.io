@@ -1,0 +1,29 @@
+@media (min-width: 359.98px){
+	#lottie{
+		bottom: -211px;
+	}
+}
+@media (min-width: 374.98px){
+	.main-screen{
+		&__inner{
+			padding: 82px 0 375px 0;
+		}
+	}
+	#lottie{
+		bottom: -346px;
+	}
+}
+@media (min-width: 539.98px){
+	#lottie{
+		bottom: -269px;
+		width: 100%;
+	}
+	.main-screen{
+		&__inner{
+			padding: 82px 0 388px 0;
+		}
+	}
+}
+@media (min-width: 575.98px){
+	
+}

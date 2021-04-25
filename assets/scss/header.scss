@@ -1,0 +1,171 @@
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	transition: background 350ms ease-in-out;
+	z-index: 7;
+	&::after{
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		box-shadow: 0px 20px 50px rgba(43, 93, 104, 0.15);
+		opacity: 0;
+		transition: opacity 350ms ease-in-out;
+	}
+	&--sticky {
+		background: #fff;
+		&::after{
+			opacity: 1;
+		}
+
+		.header__inner {
+			padding: 15px 0;
+		}
+	}
+	&__logo{
+		z-index: 10;
+	}
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 18px 0;
+		transition: padding 350ms ease-in-out;
+	}
+
+	&__btns {
+		display: flex;
+		align-items: center;
+	}
+}
+
+.logo {
+	max-width: 113px;
+	&__link {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__img {}
+}
+
+.menu {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	overflow: hidden;
+	max-height: 0;
+	transition: max-height 350ms ease-in-out;
+	box-shadow: 0px 20px 100px rgba(43, 93, 104, 0.17);
+	z-index: 9;
+	&__list {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		padding: 80px 15px 22px 15px;
+		background: #fff;
+		z-index: 9;
+	}
+
+	&__item {
+		margin-bottom: 20px;
+	}
+
+	&__link {
+		font-size: 16px;
+		line-height: 1.5;
+	}
+}
+
+.phone {
+	&.menu__item{
+		margin-top: 22px;
+	}
+	b {
+		font-family: "Poppins Medium";
+		margin-right: 12px;
+	}
+
+	.menu__link {
+		color: $secondary;
+		font-family: "Poppins Bold";
+	}
+}
+
+.language {
+	display: flex;
+	align-items: center;
+	z-index: 10;
+	margin-right: 42px;
+	&__item {
+		font-size: 16px;
+		line-height: 1.5;
+		min-width: 32px;
+
+		&--active {
+			font-family: 'Poppins Medium';
+		}
+	}
+
+	&__separator {
+		margin: 0 8px;
+		height: 16px;
+		width: 2px;
+		background: $main;
+	}
+}
+
+.burger {
+	width: 28px;
+	height: 22px;
+	position: relative;
+	cursor: pointer;
+	z-index: 10;
+
+	&--active {
+		.burger__item {
+			&:nth-child(1) {
+				transform: translate(0, 9px) rotate(-45deg);
+			}
+
+			&:nth-child(2) {
+				opacity: 0;
+				transform: translateX(10px);
+			}
+
+			&:nth-child(3) {
+				transform: translate(0, -11px) rotate(45deg);
+			}
+		}
+	}
+
+	&__item {
+		position: absolute;
+		left: 0;
+		height: 2px;
+		width: 100%;
+		background: $main;
+		border-radius: 5px;
+		transition: transform 350ms ease-in-out, opacity 350ms ease-in-out;
+
+		&:nth-child(1) {
+			top: 0;
+		}
+
+		&:nth-child(2) {
+			top: 50%;
+			transform: translateY(-50%);
+		}
+
+		&:nth-child(3) {
+			bottom: 0;
+		}
+	}
+}
