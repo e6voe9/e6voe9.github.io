@@ -1,2 +1,1 @@
-# laughing-potato
-Hey, here might be some information soon
+# e6voe9.github.io
